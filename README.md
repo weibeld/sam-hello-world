@@ -6,7 +6,7 @@ AWS Lambda application created with AWS [Serverless Application Model (SAM)](htt
 
 ## Steps
 
-This repository includes intermediate steps of the final application:
+This repository includes intermediate steps towards the final application:
 
 - [sam-hello-world-1](sam-hello-world-1)
 - [sam-hello-world-2](sam-hello-world-2)
