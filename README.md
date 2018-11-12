@@ -38,7 +38,7 @@ sam deploy \
   --capabilities CAPABILITY_IAM
 ~~~
 
-You have to provide the name of an existing AWS S3 bucket in your account to the `sam package` command. The `sam package` command will upload the application artefacts (in this case the Lambda function code) to this bucket. When you later trigger a deployment with the `sam deploy` command, AWS gets the artefacts from this bucket.
+You have to provide the name of an existing AWS S3 bucket in your account to the `sam package` command. The `sam package` command uploads the application artefacts (in this case the Lambda function code) to this bucket. When you later trigger a deployment with the `sam deploy` command, AWS gets the artefacts from this bucket.
 
 For installing he SAM CLI, use the following:
 
