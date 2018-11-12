@@ -30,13 +30,15 @@ You can deploy the application to AWS with the [SAM CLI](https://github.com/awsl
 sam package \
   --template-file template.yml \
   --output-template-file package.yml \
-  --s3-bucket <my-bucket>
+  --s3-bucket <MY_BUCKET>
 
 sam deploy \
   --template-file package.yml \
-  --stack-name <sam-hello-world-X> \
+  --stack-name <MY_STACK> \
   --capabilities CAPABILITY_IAM
 ~~~
+
+You have to provide the name of an existing AWS S3 bucket in your account to the `sam package` command. The `sam package` command will upload the application artefacts (in this case the Lambda function code) to this bucket. When you later trigger a deployment with the `sam deploy` command, AWS gets the artefacts from this bucket.
 
 For installing he SAM CLI, use the following:
 
